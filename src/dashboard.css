@@ -1,0 +1,292 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 3em; /* Tambahkan margin-top normal */
+  margin-right: -1em;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+  border-radius: 5px;
+}
+
+table th {
+  background-color: #2d3748;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #c2c2c286;
+}
+
+table img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+th {
+  text-align: center;
+}
+
+/* Styling untuk tombol */
+button {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.button-destructive{
+  background-color: #e3342f;
+  color: white; 
+  padding: 10px 20px; 
+  border: none;
+  border-radius: 8px; 
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button-destructive:hover {
+  background-color: #cc1f1a;
+}
+.button-destructive:focus {
+  outline: none; /* Hilangkan outline default */
+  box-shadow: 0 0 0 3px rgba(227, 52, 47, 0.5); /* Fokus menggunakan shadow */
+}
+
+.button-outline {
+  background-color: transparent;
+  color: #4a4a4a;
+  padding: 10px 20px;
+  border: 2px solid #414141;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.6s ease, color 0.3s ease;
+}
+
+.button-outline:hover {
+  background-color: #2d3748; 
+  color: #ffffff;
+}
+
+.button-outline:focus {
+  outline: none; 
+  box-shadow: 0 0 0 3px rgba(181, 181, 181, 0.5); 
+}
+
+.actions-buttons {
+  display: flex;
+  justify-content: center; 
+  gap: 8px; 
+}
+
+/* Styling modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 90%;
+}
+.modal-title{
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.modal-desc{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button.bg-gray-500 {
+  background-color: #f56565; 
+}
+
+button.bg-gray-500:hover {
+  background-color: #e53e3e; 
+}
+
+
+.search-input{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.search-input:hover{
+  box-shadow: 0 0 5px 1px #2d3748;
+}
+
+.search-input:focus{
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px 1px #2d3748;
+}
+
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: #2d3748;
+  color: white;
+  padding: 40px 40px;
+  position: relative; 
+}
+
+.navbar h1 {
+  position: absolute; 
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
+/* Tambahkan style untuk container tombol */
+.navbar-buttons {
+  display: flex;
+  gap: 10px; /* Menambahkan jarak antar tombol */
+  position: absolute;
+  right: 50px; /* Posisikan ke kanan */
+}
+
+.logout-button {
+  background-color: #ff6347;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; 
+  gap: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #ff4500;
+}
+
+.profile-button {
+  background-color: white;    
+  color: black;              
+  border: 2px solid black;     
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;  
+  gap: 8px;             
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+profile-button i {
+  font-size: 1.2rem;   
+}
+
+.profile-button:hover {
+  background-color: rgb(58, 54, 54);   
+  color: white;                
+}
+
+
+/* Adjustments to the main dashboard container */
+.dashboard-container {
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Other existing styles */
+.image-upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.image-upload-button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+}
+
+.image-upload-button:hover {
+  background-color: #e2e8f0;
+}

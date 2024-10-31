@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-color: #e5e5e5; 
+}
+.container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh; 
+  margin-left: -5em;
+}
+
+.card {
+  width: 400px; 
+  border: none;
+  border-radius: 10px; 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.card-header {
+  background-color: #ffffff; /* Warna latar belakang header */
+  border-bottom: 1px solid #e5e5e5; /* Garis bawah header */
+  text-align: center; /* Teks di tengah */
+  padding: 20px; /* Padding header */
+}
+
+h3 {
+  margin: 0; /* Menghapus margin default */
+  font-size: 28px; /* Ukuran font judul */
+  color: #333; /* Warna teks judul */
+}
+
+.form-label {
+  font-weight: bold; 
+}
+
+.form-control {
+  border-radius: 5px; /* Sudut melengkung untuk input */
+  border: 1px solid #ced4da; /* Border input */
+}
+
+input:focus {
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.button-outline {
+  background-color: transparent;
+  color: #4a4a4a;
+  padding: 10px 20px;
+  border: 2px solid #414141;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.6s ease, color 0.3s ease;
+}
+
+.button-outline:hover {
+  background-color: #2d3748; 
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #0056b3; 
+}
+
+.alert {
+  margin-top: 10px;
+  text-align: center; 
+}
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: xx-large;
+  font-weight: 600;
+}
